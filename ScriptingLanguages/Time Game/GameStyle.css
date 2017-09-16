@@ -1,0 +1,308 @@
+﻿#login {
+    float: right;
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+}
+
+.inputBox {
+    background-color: #4ac4e9;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+    color: #d04764;
+    font-weight: bold;
+}
+
+#welcome {
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+}
+
+#teacherLabel {
+    font-size: 24px;
+}
+
+#instructions {
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+}
+
+table {
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(55, 185, 225, 0.95);
+}
+
+#clockHolder {
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+    text-align: center;
+    width: 100%; 
+    clear: both;
+}
+
+#L2A1Holder {
+    width: 33%;
+    float: left;
+}
+
+#L2A2Holder {
+    width: 33%;
+    float: left;
+}
+
+#L2A3Holder {
+    width: 34%;
+    float: left;
+}
+
+#quit {
+    float: right;
+    text-align: center;
+    padding: 5px;
+    clear: both;
+}
+
+.dropbtn {
+    background-color: #803030;
+    color: #D5D5D5;
+    padding: 16px;
+    font-size: 16px;
+    border: 20px;
+    border-color: dimgray;
+    cursor: pointer;
+    width: 120px;
+}
+
+#l2AnswerEntries, #l1AnswerEntries, #L3Holder {
+    width: 100%;
+    display: inline-block;
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+#questionText {
+    text-align: center;
+    width: 100%; 
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#spacerDiv {
+    width: 33%;
+}
+
+canvas {
+    width: 33%;
+}
+
+#levelCompleteText {
+    text-align: center;
+}
+
+#checkResultsL1, #checkResultsL3 {
+    text-align: center;
+}
+
+#quitConfirm {
+    text-align: center;
+}
+
+#L1A1Button {
+    float: right;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#L1A2Button {
+    float: right;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#L1A3Button {
+    float: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#L1A1Answer {
+    float: left;
+    width: 33%;
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(100, 211, 244, 0.90);
+}
+
+#imageL1 {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+#L1A2Answer {
+    width: 33%;
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(100, 211, 244, 0.90);
+}
+
+#L1A3Answer {
+    float: right;
+    width: 33%;
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(100, 211, 244, 0.90);
+}
+
+#hourHandAnswer {
+    float: left;
+    width: 33%;
+    display: inline-block
+}
+
+#minuteHandAnswer {
+    float: left;
+    width: 33%;
+    display: inline-block
+}
+
+#secondHandAnswer {
+    float: left;
+    width: 34%;
+    display: inline-block
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #9F3A3A;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #B55D5D;
+    width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+    float: right;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #D26D6D
+}
+
+.show {
+    display: block;
+}
+
+body {
+    background-image: url("gamebackground.jpg");
+}
+
+.contentBox {
+    background-color: rgba(100, 211, 244, 0.90);
+}
+
+.title {
+    color: #d04764;
+    font-family: 'Lobster', cursive;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0 0 18px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.2);
+}
+
+#levels {
+    padding-left: 50px;
+}
+

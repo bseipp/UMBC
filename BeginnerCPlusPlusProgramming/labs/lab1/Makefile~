@@ -1,0 +1,2 @@
+proj0: proj0.cpp
+	g++ -Wall proj.cpp -o proj0

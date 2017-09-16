@@ -1,0 +1,6 @@
+#include "Rectangle.h"
+#include "Shape.h"
+#include <iostream>
+
+using namespace std;
+

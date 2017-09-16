@@ -1,0 +1,6 @@
+#include "Triangle.h"
+#include "Shape.h"
+#include <iostream>
+
+using namespace std;
+

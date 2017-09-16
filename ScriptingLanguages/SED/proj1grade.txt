@@ -1,0 +1,123 @@
+CMSC341 Project 1 Gradesheet
+-----------------------------------------------------------------
+Student ID: USERID
+
+Max grade: 100
+Raw grade:
+Total grade:
+
+(Total grade = Raw grade - Late penalty)
+
+-----------------------------------------------------------------
+I. Critical Errors during compilation
+
+   None
+
+   No submission (skip rest of this rubric) 0
+
+   Program does not compile with any of the test programs
+      and/or crashes without producing any output.
+      Grading based on effort
+
+      Removing one or two minor bugs will fix this project. (56-65)
+      Significant progress made, but major rewrite is necessary. (46-55)
+      Not much progress made. (36-45)
+      Barely started coding. (0-35)
+
+      Score =
+
+   Other:
+
+
+
+-----------------------------------------------------------------
+II. Submission Errors
+
+   No Makefile: -6 pts
+   Makefile had errors  -3 pts
+   Did not place the code under src/ folder.  -3 pts
+   Additional makefile tweaking required for compilation: -3 to 6 pts
+   Makefile warnings: -1 pt for each type
+
+   Other submission errors: (specify)
+
+
+-----------------------------------------------------------------
+III. Correctness
+
+   Implementation: up to -50 pts
+
+      #1 Class inheritence not as specified (skip to running test). -35 pts
+      #2 Redundant variables		-5 pts each
+      #3 Missing getters or setters	-1 pts each
+      #4 Missing overloaded cout      -10 pts
+      #5 Does not replace N/A with "-1"    -10 pts
+
+   Running with proj0 test (if statistics are in a reasonable range) :
+
+      #6  Continent has incorrect total population -5 pts
+      #7  Continent has incorrect literacy rate -5 pts
+      #8  Continent has incorrect highest gdp -5 pts
+      #9  Continent has incorrect highest population -5 pts
+
+   Running with proj0 test 2 (different files):
+
+      #10 Does not run with different files, or breaks at wrong time (skip 11 and 12) -10pts
+      #11 Continent name incorrect -5 pts
+      #12 Stats are incorrect -5 pts
+
+   Program fails all/many tests or crashes without producing output.
+   Correctness graded on effort (skip efficiency):
+
+      Lots of effort, 1 or 2 bugs from working.  70pts
+      Lots of effort, but still needs lots of work.  65pts
+      Medium effort, needs major work for completion.  50pts
+      Light effort, not much accomplished.  35pts
+      Minimal effort, barely stared coding.  10pts
+
+
+   Other errors (specify):
+
+      valgrind determined there was a memory leak -5 pts
+
+
+-----------------------------------------------------------------
+
+III. Efficiency (25 point deduction cap)
+
+   Slower than O(n^2)  -10 pts
+
+
+-----------------------------------------------------------------
+IV. Design
+
+
+   Variable types don't match uml    -3 pts each
+
+   Class design awkward 	-5 to 10 pts
+       (specify):
+
+
+
+-----------------------------------------------------------------
+V. Documentation
+
+   Documentation is sufficient and reasonable
+
+   Documentation is terse and not meaningful -3pts
+
+   Missing file header comments   -3pts
+
+   Missing function header comments   -3pts
+
+   Almost no documentation -5pts
+
+
+-----------------------------------------------------------------
+
+NOTE:
+
+If you believe your project was graded in error you can see the TAs IN PERSON during their
+office hours. This makes the overall process and satisfaction much better. Emails will not
+be returned regarding grading. You will only have a week and a half from the original due
+date to get your project checked out since it will be moved off of GL to save space.

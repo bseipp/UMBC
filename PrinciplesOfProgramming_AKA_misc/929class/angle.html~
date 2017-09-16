@@ -1,0 +1,10 @@
+<head>
+</head>
+<body>
+<form>
+Please enter an angle: <input action="results.php" method="post" type="text" name="tbAngle"><br />
+Please enter a distance from the tree: <input action="results.php" method="post" type="text" name="tbDistance">
+</form>
+</body>
+<tail>
+</tail>

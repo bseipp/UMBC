@@ -1,0 +1,116 @@
+Script started on Mon 19 Sep 2016 10:02:22 PM EDT
+[seipp1@linux2 hw2]nasm -f elf hello.asm
+[seipp1@linux2 hw2]ld hello.o -melf_i386
+[seipp1@linux2 hw2]a.out
+From hell's heart I stab at thee
+[seipp1@linux2 hw2]script
+Script started, file is typescript
+[seipp1@linux2 hw2]/script
+/script: Command not found.
+[seipp1@linux2 hw2]escript
+escript: Command not found.
+[seipp1@linux2 hw2]ls
+a.out  hello.asm  hello.asm~  hello.o  Makefile  typescript
+[seipp1@linux2 hw2]emacs typescript
+[?1049h[?1049h[?12;25h[?1h=[H[2J[23d[?25l[7m-=--:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental)----------------------------[0m[39;49m[27m
+[A[H[?12l[?25h[?12;25h[H[2J[24d[K[?1l>[?12l[?25h[?1049l[39;49m[?1049h[?1049h[?12;25h[?1h=[24;1H[?25lLoading /usr/share/emacs/site-lisp/site-start.d/auctex.el (source)...[K[H
+[?12l[?25h[?12;25h[24;70H[?25ldone[H
+[?12l[?25h[?12;25h[24;49H[?25lfocus-init.el (source)...[H
+[?12l[?25h[?12;25h[24;74H[?25ldone[H
+[?12l[?25h[?12;25h[24;49H[?25lphp-mode-init.el (source)...[K[H
+[?12l[?25h[?12;25h[24d[?25le[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Fundamental)----------------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/php-mode-init.el (source)...don\
+[A[2d[?12l[?25h[?12;25h[24d[K[23;50H[?25lo-mode-init.el (source)...[K[H
+[?12l[?25h[?12;25h[23;76H[?25ldone[H
+[?12l[?25h[?12;25h[23;50H[?25lreview-latex.el (source)...[K[H
+[?12l[?25h[?12;25h[24d[?25le[23;77Hdon\
+[2d[?12l[?25h[?12;25h[24d[?25l..[23;49Hrpm-spec-mode-init.el (source).[H
+[?12l[?25h[?12;25h[24;3H[?25ldone[H
+[?12l[?25h[?12;25h[24d[K[23;52H[?25ldev-init.el (source)...[K[H
+[?12l[?25h[?12;25h[23;75H[?25ldone[H
+[?12l[?25h[?12;25h[>0c[24d[K[H[?25l[7mFile Edit Options Buffers Tools Lisp-Interaction Help                           [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1m*scratch*   [0m[39;49m[27m[7m   All L1     (Lisp Interaction)-----------------------[0m[39;49m[27m
+[A
+Loading /usr/share/emacs/site-lisp/site-start.d/rpmdev-init.el (source)...done[K[H
+[?12l[?25h[?12;25h[1;23r[22;1H[1L[1;24r[24;1H[?25lFor information about GNU Emacs and the GNU system, type C-x ? C-a.[22;1H[K[2d[?12l[?25h[?12;25h[24d[?25lFor information about GNU Emacs and the GNU system, type C-x ? C-a.[K[H[7mFile Edit Options Buffers Tools Help                                            [0m[39;49m[27m
+[A
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[7m-UUU:----F1  [0m[39;49m[27m[7m[1mtypescript  [0m[39;49m[27m[7m   All L1     (Fundamental)----------------------------[0m[39;49m[27m
+[A[2d[?12l[?25h[?12;25h[24d[?25l[34mI-search: [39;49m[K[H
+[?12l[?25h[?12;25h[23;52H[?25l[7m Isearch)[0m[39;49m[27m[H
+[?12l[?25h[?12;25h[24d[K[23;52H[?25l[7m)--------[0m[39;49m[27m[H
+[?12l[?25h[?12;25h[24d[?25l(No files need saving)[H
+[?12l[?25h[?12;25h[24d[K[?1l>[?12l[?25h[?1049l[39;49m[seipp1@linux2 hw2]submit cs313_park proj0 hello.asm typescript
+Submitting hello.asm...OK
+Submitting typescript...OK
+[seipp1@linux2 hw2]exit
+exit
+Script done, file is typescript
+[seipp1@linux2 hw2]exit
+exit
+
+Script done on Mon 19 Sep 2016 10:04:18 PM EDT

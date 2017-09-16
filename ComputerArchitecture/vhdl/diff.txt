@@ -1,0 +1,156 @@
+343d342
+< -- ??? insert other needed signals
+345,348d343
+<   signal mulop      : std_logic;
+<   signal mulop_and  : std_logic;
+<   signal divop      : std_logic;
+<   signal divop_and  : std_logic;
+350a346,349
+>   signal cmplop : std_logic;
+>   signal cmplop_and : std_logic;
+>   signal subop_or_cmplop : std_logic;
+>   signal nc : std_logic;
+355,360c354,364
+<   signal cmplop: std_logic;
+<   signal cmplop_and: std_logic;
+<   signal or1: std_logic;
+<   signal or2: std_logic;
+<   signal not_B: std_logic_vector(31 downto 0);
+<   signal new_B: std_logic_vector(31 downto 0);
+---
+>   signal addop : std_logic;
+>   signal addop_and : std_logic;
+>   signal sllop_or_srlop : std_logic;
+>   signal inBNot : std_logic_vector (31 downto 0);
+> 
+>   signal mulop      : std_logic;
+>   signal mulop_and  : std_logic;
+>   signal divop      : std_logic;
+>   signal divop_and  : std_logic;
+> 
+>   signal resultM : std_logic_vector (31 downto 0);
+373,378c377
+< begin  -- schematic
+<   --
+<   --   REPLACE THIS SECTION FOR PROJECT PART 1
+<   --   (add the signals you need above "begin"
+<   --sub, and, sll, srl, smpl,
+< 
+---
+> begin  
+382a382
+> 
+384c384
+<   Oand: entity WORK.equal6 port map(inst(5 downto 0), "001010", andop);
+---
+>   Ocmpl: entity WORK.equal6 port map(inst(5 downto 0), "001011", cmplop);
+387,388c387,388
+<   Ocmpl: entity WORK.equal6 port map(inst(5 downto 0), "001011", cmplop);
+< -- ??? insert other  xxxop  statements
+---
+>   Oadd: entity WORK.equal6 port map(inst(5 downto 0), "100000", addop);
+>   Oand: entity WORK.equal6 port map(inst(5 downto 0), "001010", andop);
+392a393
+> 
+394c395
+<   andop_and <=andop and RRop;
+---
+>   cmplop_and <=cmplop and RRop;
+397,406c398,399
+<   cmplop_and <=cmplop and RRop;
+<   or1 <= srlop_and or sllop_and;
+<   or2 <= subop_and or cmplop_and;
+<   S_sel <= or1;
+<   not_B <= not inB;
+<   
+< -- ???  insert other   xxx_and  statements
+< 
+< -----------------------------------------------------------------------------mux 32!
+<   whichMux: entity WORK.mux_32 port map(inB, not_B, or2, new_B);
+---
+>   addop_and <=addop and RRop;
+>   andop_and <=andop and RRop;  
+409,411c402,403
+<                                     b => new_B,
+<                                     -- ???
+<                                     cin  => subop_and, -- ???
+---
+>                                     b    => resultM, 
+>                                     cin  => subop_and,
+415,417c407,408
+<   orcmp: orresult <= inA or inB;
+<   andcmp: andresult <= inA and inB;
+< 
+---
+>   orresult <= inA or inB;
+>   andresult <= inA and inB;
+418a410
+>   sllop_or_srlop <= srlop_and or sllop_and;
+420,421c412
+< -- ??? insert bshift, and, etc
+<    bsh: entity WORK.bshift port map(left => sllop,
+---
+>   bshift: entity WORK.bshift port map(left => sllop,
+427d417
+< 
+450a441,449
+> 
+>   subop_or_cmplop <= subop_and or cmplop_and;
+>   inBNot <= not inB;
+> 
+>   MuxBNot: entity WORK.mux_32 port map(inB,
+>                                        inBNot,
+>                                        subop_or_cmplop,
+>                                        resultM);
+> 
+477a477,478
+>   signal swop 	 : word_6 := "101011"; 	   -- sw op code
+>   signal addiop  : word_6 := "000111";     -- addi op code
+503a505
+>   signal EXALU2		: std_logic := '1';
+522,524c524,525
+<   signal result1: std_logic;
+<   signal WB_RRop: std_logic;
+<   signal WB_addiop: std_logic;
+---
+>   signal WB_RRop	: std_logic;          -- WB RRop
+>   signal WB_addiop	: std_logic;	      -- WB addiop
+553a555
+>   ID_RegDest : entity WORK.equal6 port map(ID_IR(31 downto 26), "000000", RegDst);
+555,556d556
+<              -- RegDst <=   must compute ???
+<              RGDST: entity WORK.equal6 port map(ID_IR(31 downto 26), "000000", RegDst);
+570,577c570,571
+< 
+<              -- ALUSrc <=   must compute  ???
+< 
+< 
+<   EQUAL6 : entity WORK.equal6 port map (EX_IR(31 downto 26),
+<                                         "000000",
+<                                         result1);
+<              ALUSrc <= not result1;
+---
+>   EX_ALU2 : entity WORK.equal6 port map(EX_IR(31 downto 26), RRop, EXALU2);
+>   ALUSrc <= not EXALU2; 
+596a591,592
+>   MEM_sw      : entity WORK.equal6 port map(MEM_IR(31 downto 26), "101011", 
+> 					    MEMWrite);           
+598,600d593
+<                 -- MEMWrite <=     must compute ???
+< 
+<    MEM_Write2      : entity WORK.equal6 port map(MEM_IR(31 downto 26), "101011", MEMWrite);
+617,618c610,612
+<   WBrrop: entity WORK.equal6 port map( WB_IR(31 downto 26),"000000", WB_RRop);
+<   WBaddiop: entity WORK.equal6 port map(WB_IR(31 downto 26),"000111",WB_addiop);
+---
+>   rrop_rd : entity WORK.equal6 port map(WB_IR(31 downto 26), "000000", WB_RRop);
+>   addiop_rd : entity WORK.equal6 port map(WB_IR(31 downto 26), "000111", WB_addiop);
+> 
+621c615
+<                                (WB_lwop or WB_RRop or WB_addiop );  --  or WB_RRop or WB_addiop ???
+---
+>                                (WB_lwop or WB_RRop or WB_addiop);
+627a622,624
+> 
+> 
+>  

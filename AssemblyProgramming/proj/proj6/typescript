@@ -1,0 +1,875 @@
+Script started on Sat 12 Nov 2016 01:44:24 PM EST
+[seipp1@linux1 proj6]gcc -ansi -Wall -g -c te[K[Kfrac_heap.c
+[seipp1@linux1 proj6]gcc -ansi -Wall -g -c frac_heap.c.c[K.c[K.c[K.c[K.c[K.c[K.c[K.c[K.c[Kt.ce.cs.ct.c1.c
+[seipp1@linux1 proj6]gcc -ansi -Wall -g -c test1.c1.c[K2.c2.c[K2.c[K2.c[K2.c[Kt2.ce2.cs2.ct2.c
+[seipp1@linux1 proj6]gcc -ansi -Wall -g -c test2.c.c[K.c[K.c[K.c[K.c[Km.ca.ci.cn.c6.c
+[seipp1@linux1 proj6]gcc test1.o frac_heap.o -o test1`[K
+[seipp1@linux1 proj6]gcc test1.o frac_heap.o -o test1[K21[P[1@2
+[seipp1@linux1 proj6]gcc test2.o frac_heap.o -o test2[K[K[K[K[Kmain6st2[P[P[P[P[P[1@m[1@a[1@i[1@n[1@6
+[seipp1@linux1 proj6]./test[K[K[K[Kmain6
+Called malloc(80): returned 0xd0d090
+-2/3 plus 1/4 = -5/12
+
+**** BEGIN HEAP DUMP ****
+
+0xd0d050
+0xd0d070
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0xd0d130
+
+**** BEGIN HEAP DUMP ****
+
+0xd0d0b0
+0xd0d0d0
+0xd0d0f0
+0xd0d110
+
+**** END HEAP DUMP ****
+[seipp1@linux1 proj6]./test1
+Called malloc(80): returned 0x1494090
+
+**** BEGIN HEAP DUMP ****
+
+0x1494010
+0x1494030
+0x1494050
+0x1494070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494030
+0x1494050
+0x1494070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494050
+0x1494070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494130
+
+**** BEGIN HEAP DUMP ****
+
+0x14940b0
+0x14940d0
+0x14940f0
+0x1494110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14940d0
+0x14940f0
+0x1494110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14940f0
+0x1494110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x14941d0
+
+**** BEGIN HEAP DUMP ****
+
+0x1494150
+0x1494170
+0x1494190
+0x14941b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494170
+0x1494190
+0x14941b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494190
+0x14941b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14941b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494270
+
+**** BEGIN HEAP DUMP ****
+
+0x14941f0
+0x1494210
+0x1494230
+0x1494250
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494210
+0x1494230
+0x1494250
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494230
+0x1494250
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494250
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494310
+
+**** BEGIN HEAP DUMP ****
+
+0x1494290
+0x14942b0
+0x14942d0
+0x14942f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14942b0
+0x14942d0
+0x14942f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14942d0
+0x14942f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14942f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x14943b0
+
+**** BEGIN HEAP DUMP ****
+
+0x1494330
+0x1494350
+0x1494370
+0x1494390
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494350
+0x1494370
+0x1494390
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494370
+0x1494390
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494390
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494450
+
+**** BEGIN HEAP DUMP ****
+
+0x14943d0
+0x14943f0
+0x1494410
+0x1494430
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14943f0
+0x1494410
+0x1494430
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494410
+0x1494430
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494430
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x14944f0
+
+**** BEGIN HEAP DUMP ****
+
+0x1494470
+0x1494490
+0x14944b0
+0x14944d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494490
+0x14944b0
+0x14944d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14944b0
+0x14944d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14944d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494590
+
+**** BEGIN HEAP DUMP ****
+
+0x1494510
+0x1494530
+0x1494550
+0x1494570
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494530
+0x1494550
+0x1494570
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494550
+0x1494570
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494570
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494630
+
+**** BEGIN HEAP DUMP ****
+
+0x14945b0
+0x14945d0
+0x14945f0
+0x1494610
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14945d0
+0x14945f0
+0x1494610
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14945f0
+0x1494610
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494610
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x14946d0
+
+**** BEGIN HEAP DUMP ****
+
+0x1494650
+0x1494670
+0x1494690
+0x14946b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494670
+0x1494690
+0x14946b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494690
+0x14946b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14946b0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494770
+
+**** BEGIN HEAP DUMP ****
+
+0x14946f0
+0x1494710
+0x1494730
+0x1494750
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494710
+0x1494730
+0x1494750
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494730
+0x1494750
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494750
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494810
+
+**** BEGIN HEAP DUMP ****
+
+0x1494790
+0x14947b0
+0x14947d0
+0x14947f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14947b0
+0x14947d0
+0x14947f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14947d0
+0x14947f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14947f0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x14948b0
+
+**** BEGIN HEAP DUMP ****
+
+0x1494830
+0x1494850
+0x1494870
+0x1494890
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494850
+0x1494870
+0x1494890
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494870
+0x1494890
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494890
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494950
+
+**** BEGIN HEAP DUMP ****
+
+0x14948d0
+0x14948f0
+0x1494910
+0x1494930
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14948f0
+0x1494910
+0x1494930
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494910
+0x1494930
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494930
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x14949f0
+
+**** BEGIN HEAP DUMP ****
+
+0x1494970
+0x1494990
+0x14949b0
+0x14949d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494990
+0x14949b0
+0x14949d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14949b0
+0x14949d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x14949d0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494a90
+
+**** BEGIN HEAP DUMP ****
+
+0x1494a10
+0x1494a30
+0x1494a50
+0x1494a70
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494a30
+0x1494a50
+0x1494a70
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494a50
+0x1494a70
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494a70
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494b30
+
+**** BEGIN HEAP DUMP ****
+
+0x1494ab0
+0x1494ad0
+0x1494af0
+0x1494b10
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494ad0
+0x1494af0
+0x1494b10
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494af0
+0x1494b10
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494b10
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494bd0
+
+**** BEGIN HEAP DUMP ****
+
+0x1494b50
+0x1494b70
+0x1494b90
+0x1494bb0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494b70
+0x1494b90
+0x1494bb0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494b90
+0x1494bb0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494bb0
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x1494c70
+
+**** BEGIN HEAP DUMP ****
+
+0x1494bf0
+0x1494c10
+0x1494c30
+0x1494c50
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494c10
+0x1494c30
+0x1494c50
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494c30
+0x1494c50
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x1494c50
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+[seipp1@linux1 proj6]./test2
+Called malloc(80): returned 0x73b090
+
+**** BEGIN HEAP DUMP ****
+
+0x73b010
+0x73b030
+0x73b050
+0x73b070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x73b030
+0x73b050
+0x73b070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x73b050
+0x73b070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x73b070
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+Called malloc(80): returned 0x73b130
+
+**** BEGIN HEAP DUMP ****
+
+0x73b0b0
+0x73b0d0
+0x73b0f0
+0x73b110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x73b0d0
+0x73b0f0
+0x73b110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x73b0f0
+0x73b110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+0x73b110
+
+**** END HEAP DUMP ****
+
+**** BEGIN HEAP DUMP ****
+
+Free list is empty
+
+**** END HEAP DUMP ****
+
+Deleting fraction pointer, pointer is valued at: 0x73b010
+
+**** BEGIN HEAP DUMP ****
+
+0x73b010
+
+**** END HEAP DUMP ****
+
+Deleting fraction pointer, pointer is valued at: 0x73b030
+
+**** BEGIN HEAP DUMP ****
+
+0x73b030
+0x73b010
+
+**** END HEAP DUMP ****
+
+Deleting fraction pointer, pointer is valued at: 0x73b050
+
+**** BEGIN HEAP DUMP ****
+
+0x73b050
+0x73b030
+0x73b010
+
+**** END HEAP DUMP ****
+[seipp1@linux1 proj6]exit
+exit
+
+Script done on Sat 12 Nov 2016 01:47:06 PM EST

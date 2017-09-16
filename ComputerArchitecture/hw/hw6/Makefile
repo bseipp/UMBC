@@ -1,0 +1,21 @@
+# Makefile for Cadence "inca" "ncvhdl"  VHDL
+#
+# use  tcsh
+#      source vhdl_cshrc
+#      make
+#
+# must have set up  cds.lib  and  hdl.var  in default directory
+# must have subdirectory "vhdl_lib",  mkdir  vhdl_lib, or just  make clean 
+
+all: pmul8_test.out
+
+pmul8_test.out: pmul8.vhdl pmul8_test.vhdl pmul8_test.run
+	ncvhdl -v93 pmul8.vhdl
+	ncvhdl -v93 pmul8_test.vhdl
+	ncelab -v93 pmul8_test:circuits
+	ncsim -batch -logfile pmul8_test.out -input pmul8_test.run pmul8_test
+
+clean:
+	rm -f *.log
+	rm -rf vhdl_lib
+	mkdir  vhdl_lib

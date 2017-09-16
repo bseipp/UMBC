@@ -1,0 +1,150 @@
+%define STDIN 0
+%define STDOUT 1
+%define SYSCALL_EXIT 1
+%define SYSCALL_READ 3
+%define SYSCALL_WRITE 4
+%define BUFLEN 256
+
+	  SECTION .data		
+
+label1:	   db "Enter string: "	
+len1:	   equ $-label1		
+
+label2:	   db "Original: "	
+len2:	   equ $-label2		
+
+label3:	   db "Convert:  "	
+len3:	   equ $-label3
+
+newLine:	db 10 	
+len5:	   equ $-newLine
+
+	   SECTION .bss	
+buf:	   resb BUFLEN	
+newstr:	   resb BUFLEN		
+rlen:	   resb 4		
+
+
+	   SECTION .text
+	   global  _start
+
+_start:
+	   nop		
+start:			
+
+	;;  print label1 to screen for user input
+	   mov     eax, SYSCALL_WRITE 
+	   mov     ebx, STDOUT	   
+	   mov     ecx, label1	   
+	   mov     edx, len1	   
+	   int     080h		   
+
+	;;  scan input
+	   mov     eax, SYSCALL_READ
+	   mov     ebx, STDIN	  
+	   mov     ecx, buf	  
+	   mov     edx, BUFLEN	  
+	   int     080h
+	   mov     [rlen], eax
+L1_init:
+	   mov     ecx, [rlen] 
+	   mov     esi, buf    
+	   mov     edi, newstr 
+
+L1_top:
+	   mov     al, [esi] 
+	   inc     esi	  
+	   cmp     al, 'z'-'a'
+	   ja      L1_cont
+	;; 	   cmp     al, '?'
+	;; 	   je      L1_cont
+	;; 	   cmp     al, '1'
+	;; 	   je      L1_cont
+	;; 	   cmp     al, '+'
+	;; 	   je      L1_cont
+	;; 	   cmp     al, '='
+	;; 	   je      L1_cont
+	;; 	   cmp     al, '!'
+	;; 	   je      L1_cont
+	   cmp     al, 'a'	; ;< a
+	   jb      L1_uppershiftwrap
+	   cmp     al, 'm'	; > z
+	   ja      L1_lowershift
+	   add     al, 13	; shift 13
+
+L1_cont:
+	   mov     [edi], al 
+	   inc     edi	  
+	   dec     ecx	  
+	   jnz     L1_top
+
+
+L1_uppershiftwrap:
+	   cmp    ecx, 0
+	   jz     L1_end
+	   cmp    al, 'M'
+	   jb     L1_uppershift
+	   cmp    ecx, 0
+	   jz     L1_end
+	   sub    al, 13
+	   mov    [edi], al
+	   inc    edi
+	   dec    ecx
+	   jnz    L1_top
+
+L1_uppershift:
+	   cmp    ecx, 0
+	   jz     L1_end
+	   add    al, 13
+	   mov    [edi], al
+	   inc    edi
+	   dec    ecx
+	   jnz    L1_top
+
+L1_lowershift:
+	   cmp    ecx, 0
+	   jz     L1_end
+	   sub    al, 13
+	   mov    [edi], al
+	   inc    edi
+	   dec    ecx
+	   jnz    L1_top
+
+L1_end:
+	;;  print the user input back to them for confirmation
+	   mov     eax, SYSCALL_WRITE ; label
+	   mov     ebx, STDOUT
+	   mov     ecx, label2
+	   mov     edx, len2
+	   int     080h
+
+	   mov     eax, SYSCALL_WRITE ; value
+	   mov     ebx, STDOUT
+	   mov     ecx, buf
+	   mov     edx, [rlen]
+	   int     080h
+
+	;;  print translated string
+	   mov     eax, SYSCALL_WRITE ; label
+	   mov     ebx, STDOUT
+	   mov     ecx, label3
+	   mov     edx, len3
+	   int     080h
+
+           mov     eax, SYSCALL_WRITE ; value
+	   mov     ebx, STDOUT
+	   mov     ecx, newstr
+	   mov     edx, [rlen]
+	   int     080h
+
+	;; print new line
+	
+	   mov     eax, SYSCALL_WRITE ; write message
+	   mov     ebx, STDOUT
+	   mov     ecx, newLine
+	   mov     edx, len5
+	   int     080h
+	
+exit:	   mov     eax, SYSCALL_EXIT 
+	   mov     ebx, 0	     
+	   int     080h	  

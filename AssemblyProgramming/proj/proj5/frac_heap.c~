@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "frac_heap.h"
+
+#define MEM_ARRAY_SIZE 20
+
+fraction heap[MEM_ARRAY_SIZE] = {};
+fraction *firstFreeBlock;
+
+void init_heap() {
+  int x;
+  for (x = 0; x < MEM_ARRAY_SIZE; x++){
+    heap[x].numerator = 0;
+    heap[x].denominator = x+1;
+    heap[x].sign = 0;
+  }
+  firstFreeBlock = &heap[0];
+}
+
+fraction* new_frac() {
+  if (firstFreeBlock == NULL){
+    return NULL;
+  }
+
+  fraction *temp = firstFreeBlock;
+  /*make firstFreeBlock equal what the old one was point to*/
+  if (firstFreeBlock->denominator != 20) {
+      firstFreeBlock = &heap[temp->denominator];
+  } 
+  else {
+    firstFreeBlock = NULL;
+  }
+
+  /*return pointer to fraction.*/
+  return temp;
+}
+
+void del_frac(fraction *fp){
+  /* function should clear out the old fraction, and insert the 
+   * free block of memory right after the first free block */
+
+  /*calculate the index of the fraction to delete*/
+  int index = fp - &heap[0];
+
+  /*calculate the index of the firstFreeBlock*/
+  int firstBlockIndex = firstFreeBlock - &heap[0];
+
+  if (index < 0 || index > 19){
+    printf("Warning fraction passed to del_frac function that is outside the array. Exiting program and alerting police.\n");
+    exit(0);
+  }
+
+  fp->sign = 0;
+  fp->numerator = 0;
+  fp->denominator = firstBlockIndex;
+  
+  firstFreeBlock = fp;
+}
+
+void dump_heap() {
+  int x;
+  printf("\n**** BEGIN HEAP DUMP ****\n");
+
+  /*calculate the index of the firstFreeBlock*/
+  int firstBlockIndex = firstFreeBlock - &heap[0];
+
+  printf("first_free = %d\n\n", firstBlockIndex);
+
+  for (x = 0; x < MEM_ARRAY_SIZE; x++){
+    printf("   %d: %d %d %d\n", x, heap[x].sign, heap[x].numerator, heap[x].denominator);
+  }
+  printf("**** END HEAP DUMP ****\n");
+}

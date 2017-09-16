@@ -1,0 +1,12 @@
+class Fraction {
+ Public:
+  void Output();
+  Fraction Reciprocal();
+  Fraction();
+  Fraction(int numerator, int denominator);
+ Private:
+  int m_numerator;
+  int m_denominator;
+
+};
+

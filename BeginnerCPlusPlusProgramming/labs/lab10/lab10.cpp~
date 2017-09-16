@@ -1,0 +1,47 @@
+
+#include <iostream>
+#include "IntArray.h"
+
+using namespace std;
+
+int main()
+{
+  //create an array with negative numbers
+  IntArray negA(-1);
+
+  //create an array with 0
+  IntArray zeroA(0); 
+
+  IntArray ia(10);
+  IntArray ib(11);
+  //check equality of different sized arrays
+  ia == ib;
+
+  //compare two empty arrays
+  IntArray zeroA2(0);
+  zeroA == zeroA2;
+  
+  //inequality operator on not equal for both different size and non-zero
+  ia != ib;
+  zeroA != zeroA2;
+
+  //addition operator
+  ia += zeroA;
+
+  //+- operator
+  zeroA + ia;
+  ia + zeroA;
+
+  //index operator
+  ia[50];
+  
+  //get
+  ia.get(-1);
+  ia.get(50);
+
+
+  // Print out the number of errors/edge cases found
+  cout << endl << endl << IntArray::GetProgress() << endl;
+    
+  return 0;
+}

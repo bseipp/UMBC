@@ -1,0 +1,8 @@
+1. Potentiometer
+2. Diode
+3. Photo Resistor
+4. Piezo Element
+5. DC Motor
+6. Push Button
+7. Servo
+8. Relay

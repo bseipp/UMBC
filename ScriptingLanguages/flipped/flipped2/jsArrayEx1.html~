@@ -1,0 +1,13 @@
+<html><head>  
+<meta charset=utf-8 />  
+   <title> Array Exercise #1 </title>
+   <script type="text/javascript" src= "jsARRAYEx1.js">
+   </script>
+
+   <p id="gcd"></p>
+
+</head>  
+<body>  
+Array Exercise #1
+</body>
+</html>
